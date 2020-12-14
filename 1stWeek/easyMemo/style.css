@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.memo-edit {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.apper-zone {
+  font-size: 2rem;
+  height: auto;
+}
+
+/* 表示アニメーションをする前のスタイル */
+.v-enter {
+  opacity: 0;
+}
+
+/* 表示アニメーション後のスタイル */
+.v-enter-to {
+  opacity: 1;
+}
+
+/* 表示アニメーション動作中のスタイル */
+.v-enter-active {
+  transition: all 500ms;
+}

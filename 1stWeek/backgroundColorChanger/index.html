@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>カラーチェンジ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>カラーチェンジ</h1>
+        <!-- ラジオボタンで変えたい色を選択させる -->
+        <label><input type="radio" v-model="color" value="red">赤</label>
+        <label><input type="radio" v-model="color" value="blue">青</label>
+        <label><input type="radio" v-model="color" value="green">緑</label>
+        <label><input type="radio" v-model="color" value="pink">ピンク</label>
+        <label><input type="radio" v-model="color" value="purple">紫</label>
+        <button v-on:click="backgroundChange">押すと背景色が変わるよ</button>
+      </header>
+      <transition name="fade">
+        <div class="background-change" v-bind:style="styleObject" v-if="back"></div>
+      </transition>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

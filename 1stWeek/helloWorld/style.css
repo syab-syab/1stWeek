@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html {
+  font-size: 3em;
+}
+
+body {
+  background: aqua;
+}
+
+#app {
+  height: auto;
+  width: auto;
+}
+
+.greetbtn {
+  width: 100%;
+}
+
+/* #greet {
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+} */
+
+.fade-enter-active, .v-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter {
+  opacity: 0;
+}
